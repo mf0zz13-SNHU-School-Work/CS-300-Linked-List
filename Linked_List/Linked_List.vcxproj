@@ -24,6 +24,7 @@
     <ProjectGuid>{6357a472-7f10-4caa-957a-176086aa04e4}</ProjectGuid>
     <RootNamespace>LinkedList</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>LinkedList</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -123,7 +124,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Linked_List.cpp" />
+    <ClCompile Include="CSVparser.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eBid_Monthly_Sales.csv" />
+    <None Include="eBid_Monthly_Sales_Dec_2016.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSVparser.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
